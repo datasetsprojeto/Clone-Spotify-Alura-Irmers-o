@@ -63,15 +63,14 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
-.sidebar-library__content  {
+.sidebar-library__content {
     display: flex;
     justify-content: space-between;
     color: #b3b3b3;
-    text-decoration: none;
     margin-bottom: 10px;
 }
 
-.sidebar-library__content  button {
+.sidebar-library__content button {
     display: flex;
     padding: 20px 10px;
     background-color: #121212;
@@ -81,9 +80,11 @@ body {
 .sidebar-library__content .fa-plus {
     padding-top: 4px;
     margin: 20px 10px;
-    cursor: default;
+    cursor: pointer;
+    /* Alterado para pointer */
     font-size: 14px;
 }
+
 .sidebar-library__content .fa-book {
     font-size: 20px;
 }
@@ -113,14 +114,16 @@ body {
 
 .create-playlist__text-two {
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 12px;
+    /* Alterado para 12px para consistência */
     padding-bottom: 14px;
     margin-bottom: 12px;
 }
 
 .create-playlist__button {
     width: 113px;
-    font-size: 0.8rem;
+    font-size: 12px;
+    /* Alterado para 12px para consistência */
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
@@ -135,7 +138,8 @@ body {
     cursor: pointer;
 }
 
-.cookies.cookies:hover {
+.cookies:hover {
+    /* Corrigido */
     text-decoration: underline;
 }
 
@@ -152,4 +156,44 @@ body {
     color: #fff;
     line-height: 1;
     font-weight: 600;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 30px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(209,61,81,1) 0%, rgba(0,113,255,1) 100%);
+}
+
+.footer-content{
+display: flex;
+justify-content: space-between;
+}
+
+.footer-content__text_one {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer-content__text_two {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer-content__button {
+    padding: 15px 30px;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 100%;
+    vertical-align: baseline;
 }
